@@ -1,30 +1,20 @@
 import Big from "big.js";
 
-export default operate = (numberOne, numberTwo, operation) => {
-  // dataObj has three properties: total, next, operation
-
-  let x = numberOne;
-  let y = numberTwo;
-
-  // Operations:  +, -, x, ÷, %
+const operate = (numberOne, numberTwo, operation) => {
+  let [x, y] = [numberOne, numberTwo];
 
   switch (operation) {
     case "+":
-      return Big(x).plus(y);
-      break;
+      return Big(x).plus(y).toString();
     case "-":
-      return Big(x).minus(y);
-      break;
+      return Big(x).minus(y).toString();
     case "x":
-      return Big(x).times(y);
-      break;
+      return Big(x).times(y).toString();
     case "÷":
-      return Big(x).div(y);
-      break;
-    case "%":
-      return Big(x).plus(y);
-      break;
+      return Big(x).div(y).toString();
+    default:
+      return 'Not an operable symbol';
   }
-
-
 };
+
+export default operate;

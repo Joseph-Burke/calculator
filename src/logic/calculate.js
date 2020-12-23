@@ -1,5 +1,7 @@
 import Big from 'big.js';
 
-export default calculate = (dataObj, buttonName) => {
+const calculate = (dataObj, buttonName) => {
   // dataObj has three properties: total, next, operation
 }
+
+export default calculate;
