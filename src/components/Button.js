@@ -7,7 +7,6 @@ export default class Button extends Component {
   };
 
   render() {
-    const data = this.props.data;
     const name = this.props.name;
     const processInput = this.props.processInput;
     return (
@@ -21,5 +20,6 @@ export default class Button extends Component {
 }
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  processInput: PropTypes.func.isRequired
 };
