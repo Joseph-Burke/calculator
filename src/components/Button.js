@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import Big from "big.js";
-import calculate from '../logic/calculate';
 
 export default class Button extends Component {
   constructor(props) {

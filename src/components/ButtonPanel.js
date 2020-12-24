@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from "prop-types";
-import Big from "big.js";
 import Button from "./Button";
 
 export default class ButtonPanel extends Component {

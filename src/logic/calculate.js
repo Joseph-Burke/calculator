@@ -1,4 +1,3 @@
-import Big from 'big.js';
 import operate from './operate';
 
 const calculate = (dataObj, buttonName) => {
