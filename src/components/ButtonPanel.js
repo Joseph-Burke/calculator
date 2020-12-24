@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Button from "./Button";
 
 export default class ButtonPanel extends Component {
