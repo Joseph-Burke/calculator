@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from "./Button";
 
 export default class ButtonPanel extends Component {
@@ -7,7 +8,7 @@ export default class ButtonPanel extends Component {
   };
 
   render() {
-    const [ data, inputHandler] = [ this.props ];
+    const data = this.props.data;
     const processInput = this.props.inputHandler;
     return (
       <div>
@@ -41,7 +42,11 @@ export default class ButtonPanel extends Component {
           <Button name={"="} data={data} processInput = {processInput} />
         </div >
       </div>
-
     )
   };
 }
+
+ButtonPanel.propTypes = {
+  data: PropTypes.object.isRequired,
+  inputHandler: PropTypes.func.isRequired
+};
