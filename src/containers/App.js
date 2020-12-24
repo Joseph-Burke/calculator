@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import Big from 'big.js';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
+import Display from '../components/Display';
+import ButtonPanel from '../components/ButtonPanel';
 import calculate from '../logic/calculate';
 
 export default class App extends Component {
