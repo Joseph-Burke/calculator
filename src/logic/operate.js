@@ -10,6 +10,8 @@ const operate = (numOne, numTwo, operation) => {
       return Big(numOne).times(numTwo).toString();
     case "÷":
       return Big(numOne).div(numTwo).toString();
+    case "%":
+      return Big(numOne).div(100).toString();
     default:
       return 'Not an operable symbol';
   }

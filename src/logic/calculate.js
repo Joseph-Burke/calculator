@@ -16,9 +16,9 @@ const calculate = ({ total, next, operation }, buttonName) => {
       break;
     case '%':
       if (next === null) {
-        total /= 100;
+        total = operate(total, null, '%');
       } else {
-        next /= 100;
+        next = operate(next, null, '%');
       }
       break;
     case '+':
