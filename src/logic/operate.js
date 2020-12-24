@@ -1,17 +1,15 @@
 import Big from "big.js";
 
-const operate = (numberOne, numberTwo, operation) => {
-  let [x, y] = [numberOne, numberTwo];
-
+const operate = (numOne, numTwo, operation) => {
   switch (operation) {
     case "+":
-      return Big(x).plus(y).toString();
+      return Big(numOne).plus(numTwo).toString();
     case "-":
-      return Big(x).minus(y).toString();
+      return Big(numOne).minus(numTwo).toString();
     case "X":
-      return Big(x).times(y).toString();
+      return Big(numOne).times(numTwo).toString();
     case "÷":
-      return Big(x).div(y).toString();
+      return Big(numOne).div(numTwo).toString();
     default:
       return 'Not an operable symbol';
   }
