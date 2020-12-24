@@ -30,7 +30,11 @@ const calculate = (dataObj, buttonName) => {
     case 'X':
       if (total === null) {
         total = 0;
-      }
+      };
+      if (total !== null && next !== null & operation !== null) {
+        total = operate(total, next, operation);
+        next = null;
+      };
       operation = buttonName;
       break;
     case '0':

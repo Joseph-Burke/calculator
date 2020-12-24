@@ -24,7 +24,7 @@ export default class App extends Component {
     const data = this.state.data;
     return (
       <>
-        <Display result={data.total} />
+        <Display result={data.next ? data.next : data.total} />
         <ButtonPanel data={data} inputHandler={this.handleInput} />
       </>
     )
