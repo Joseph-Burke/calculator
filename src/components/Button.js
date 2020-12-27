@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
-
 import PropTypes from "prop-types";
-import Big from "big.js";
 
-export default class Button extends Component {
-  constructor(props) {
-    super(props)
-  };
-
-  render() {
-    return (
-      <button>
-        {this.props.name}
-      </button>
-    )
-  }
+const Button = props => {
+  const name = props.name;
+  const processInput = props.processInput;
+  return (
+    <button
+      onClick={() => processInput(name)}
+      >
+      {props.name}
+    </button>
+  )
 }
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  processInput: PropTypes.func.isRequired
 };
+
+export default Button;
