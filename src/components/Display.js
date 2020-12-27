@@ -1,14 +1,8 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 import PropTypes from "prop-types";
 
-export default class Display extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return <div>{this.props.result}</div>;
-  }
+const Display = props => {
+  return <div>{props.result}</div>;
 }
 
 Display.defaultProps = {
@@ -18,3 +12,5 @@ Display.defaultProps = {
 Display.propTypes = {
   result: PropTypes.string.isRequired,
 };
+
+export default Display;
