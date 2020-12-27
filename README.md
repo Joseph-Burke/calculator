@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This project is a calculator built using React.
 
-## Available Scripts
+![screenshot](./screenshot.png)
 
-In the project directory, you can run:
+The purpose of this project is to demonstrate competence in React fundamentals such as using stateful and stateless components.
+At the time of writing, the main focus of the work has been on building the components and ensuring that they interact in such a way that the calculator works well. The appearance of the calculator has been left bare, but this could easily be remedied in the future with some basic styling.
 
-### `yarn start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React** (bootstrapped using the [**create-react-app**](https://www.npmjs.com/package/create-react-app) template)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Local Setup
 
-### `yarn test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_**node.js is a pre-requisite of this project.**_
 
-### `yarn build`
+Don't have node.js? Choose a download method [here](https://nodejs.org/en/download/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To set this project up locally, follow these simple instructions:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Open a Terminal and navigate to the location in your system where you would like to download the project. **New to Terminal? [Learn here](https://www.freecodecamp.org/news/conquering-the-command-line-f85f5e46c07c/).**
 
-### `yarn eject`
+2. Enter the following line of code to clone this repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`git clone git@github.com:Joseph-Burke/calculator.git`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Now that the repository has been cloned, navigate inside it using `cd calculator`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. The project's dependencies are managed by npm. The details of this project's dependencies can be found in `package.json`. To install them, enter the following line of code in the Terminal.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`npm install`
 
-## Learn More
+5. Congratulations! All dependencies have now been installed. The source code may now be compiled. Enter the following line of code in the terminal: 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm run build`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. Once the code has been compiled, all that is required is to enter `npm run start`. This will run a  script that will serve the project. It should automatically open in your browser, but if it doesn't, open a browser and navigate to http://localhost:3000 
 
-### Code Splitting
+7. Enjoy your calculator!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Author
 
-### Analyzing the Bundle Size
+👤 **Joe Burke**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Github: [@Joseph-Burke](https://github.com/Joseph-Burke)
+- Twitter: [@__joeburke](https://twitter.com/__joeburke)
+- Linkedin: [Joseph Burke](https://www.linkedin.com/in/--joeburke/)
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions, issues and feature requests are always welcome!
 
-### Advanced Configuration
+Drop me a line through any of the channels listed above or head directly to the [issues page](issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Show your support
 
-### Deployment
+Hey! Give this project a ⭐️! It costs nothing :)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgments
 
-### `yarn build` fails to minify
+- This project was built as part of the Microverse Web Development course, which you can learn more about [here](https://www.microverse.org/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
