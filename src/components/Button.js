@@ -1,20 +1,21 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const Button = props => {
-  const name = props.name;
-  const processInput = props.processInput;
+  const { name } = props;
+  const { processInput } = props;
   return (
     <button
+      type="button"
       onClick={() => processInput(name)}
-      >
-      {props.name}
+    >
+      {name}
     </button>
-  )
-}
+  );
+};
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  processInput: PropTypes.func.isRequired
+  processInput: PropTypes.func.isRequired,
 };
 
 export default Button;

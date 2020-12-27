@@ -11,26 +11,33 @@ export default class App extends Component {
       data: {
         total: null,
         next: null,
-        operation: null
-      }
+        operation: null,
+      },
     };
 
     this.handleInput = this.handleInput.bind(this);
+  }
+
+  handleInput = buttonName => {
+    const { data } = this.state;
+    try {
+      this.setState({ data: calculate(data, buttonName) });
+    } catch (error) {
+      this.setState({
+        data: {
+          next: error.message,
+        },
+      });
+    }
   };
 
   render() {
-    const data = this.state.data;
+    const { data } = this.state;
     return (
       <>
         <Display result={data.next ? data.next : data.total} />
         <ButtonPanel data={data} inputHandler={this.handleInput} />
       </>
-    )
+    );
   }
-
-  handleInput = buttonName => {
-    this.setState({
-      data: calculate(this.state.data, buttonName)
-    });
-  }
-};
+}

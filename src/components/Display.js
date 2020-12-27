@@ -1,9 +1,9 @@
-const Display = props => {
-  return <div>{props.result}</div>;
-}
+import PropTypes from 'prop-types';
 
-Display.defaultProps = {
-  result: '0',
+const Display = ({ result }) => <div>{result}</div>;
+
+Display.propTypes = {
+  result: PropTypes.string.isRequired,
 };
 
 export default Display;

@@ -1,6 +1,8 @@
 import operate from './operate';
 
-const calculate = ({ total, next, operation }, buttonName) => {
+const calculate = (dataObj, buttonName) => {
+  let total; let next; let
+    operation = { dataObj };
   switch (buttonName) {
     case 'AC':
       total = null;
@@ -27,11 +29,11 @@ const calculate = ({ total, next, operation }, buttonName) => {
     case 'X':
       if (total === null) {
         total = 0;
-      };
-      if (total !== null && next !== null & operation !== null) {
+      }
+      if (total !== null && next !== null && operation !== null) {
         total = operate(total, next, operation);
         next = null;
-      };
+      }
       operation = buttonName;
       break;
     case '0':
@@ -86,6 +88,6 @@ const calculate = ({ total, next, operation }, buttonName) => {
   }
 
   return { total, next, operation };
-}
+};
 
 export default calculate;
