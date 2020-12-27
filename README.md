@@ -7,6 +7,10 @@
 The purpose of this project is to demonstrate competence in React fundamentals such as using stateful and stateless components.
 At the time of writing, the main focus of the work has been on building the components and ensuring that they interact in such a way that the calculator works well. The appearance of the calculator has been left bare, but this could easily be remedied in the future with some basic styling.
 
+## Live Demo
+
+To jump right into the project, visit the [Live Demo](https://number-machine.herokuapp.com/)!
+
 ## Built With
 
 - **React** (bootstrapped using the [**create-react-app**](https://www.npmjs.com/package/create-react-app) template)
