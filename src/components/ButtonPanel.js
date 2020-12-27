@@ -39,7 +39,11 @@ const ButtonPanel = props => {
 };
 
 ButtonPanel.propTypes = {
-  data: PropTypes.objectOf(PropTypes.object()).isRequired,
+  data: PropTypes.shape({
+    next: PropTypes.string,
+    total: PropTypes.string,
+    operation: PropTypes.string,
+  }).isRequired,
   inputHandler: PropTypes.func.isRequired,
 };
 
