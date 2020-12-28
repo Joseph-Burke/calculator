@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from '../styles/home.module.css';
 
 const Home = () => (
   <>
-    <h3>Welcome to our page!</h3>
-    <p>
+    <h3 className={styles.title}>Welcome to our page!</h3>
+    <p className={styles.text}>
       Mathematics includes the study of such topics as quantity (number theory),
       structure (algebra), space (geometry), and change (mathematical analysis).
       It has no generally accepted definition. Mathematicians seek and use
@@ -18,7 +19,7 @@ const Home = () => (
       problems can take years or even centuries of sustained inquiry.
     </p>
 
-    <p>
+    <p className={styles.text}>
       Rigorous arguments first appeared in Greek mathematics. Since the
       pioneering work of Giuseppe Peano (1858–1932), David Hilbert (1862–1943),
       and others on axiomatic systems in the late 19th century, it has become
