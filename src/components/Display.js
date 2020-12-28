@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import styles from '../styles/display.module.css';
 
-const Display = ({ result }) => <div>{result}</div>;
+const Display = ({ result }) => <div className={styles.display}>{result}</div>;
 
 Display.propTypes = {
   result: PropTypes.string,
