@@ -8,8 +8,8 @@ const Button = props => {
   const buttonClasses = [
     styles.button,
     styles[`${color}_button`],
-    wide ? styles.wide : ""
-  ].join(" ");
+    wide ? styles.wide : '',
+  ].join(' ');
 
   return (
     <button
