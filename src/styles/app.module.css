@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  width: 700px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 40px;
+}

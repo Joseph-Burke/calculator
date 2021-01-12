@@ -1,0 +1,11 @@
+.button_panel {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  font-size: 18px;
+}
+
+.row {
+  height: 100px;
+  display: flex;
+}

@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 64px;
+  margin: 0;
+}
+
+.list {
+  display: flex;
+  font-size: 30px;
+  margin: 0;
+}
+
+.listItem {
+  list-style-type: none;
+  margin: 0 10px;
+}

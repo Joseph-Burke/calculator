@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './containers/Home';
 import App from './containers/App';
+import Quote from './containers/Quote';
+import Header from './components/Header';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/calculator" component={App} />
+        <Route exact path="/quote" component={Quote} />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );
