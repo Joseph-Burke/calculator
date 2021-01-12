@@ -5,7 +5,7 @@ import styles from '../styles/button_panel.module.css';
 const ButtonPanel = props => {
   const { data, inputHandler } = props;
   return (
-    <div className={styles.button_panel}>
+    <div className={styles.button_panel} data-testid="button-panel">
       <div className={styles.row}>
         <Button
           name="AC"
