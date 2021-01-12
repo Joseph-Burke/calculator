@@ -1,5 +1,5 @@
-describe("Button Panel", () => {
-  it("passes a test", () => {
+describe('Button Panel', () => {
+  it('passes a test', () => {
     expect(true).toBeTruthy();
   });
 });

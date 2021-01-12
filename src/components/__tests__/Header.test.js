@@ -1,16 +1,12 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom";
-import Header from "../Header";
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import Header from '../Header';
 
-describe("Header", () => {
-  render(<Header />)
-  it("contains a title", () => {
+describe('Header', () => {
+  render(<Header />);
+  it('contains a title', () => {
     const title = screen.getByText(/Math Magicians/i);
-    expect(title).toBeInTheDocument();    
+    expect(title).toBeInTheDocument();
   });
-  it('contains a nav element', () => {
-    const title = screen.getByText()
-  })
-
 });
