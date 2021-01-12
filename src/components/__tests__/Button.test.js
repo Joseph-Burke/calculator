@@ -5,10 +5,8 @@ import Button from '../Button';
 
 const testProps = {
   name: 'test-button',
-  processInput: buttonName => {
-    console.log(buttonName);
-  },
-}
+  processInput: buttonName => buttonName,
+};
 
 describe('Button', () => {
   const { name, processInput } = testProps;
